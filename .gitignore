@@ -1,25 +1,22 @@
-*.class
+.DS_Store
+node_modules
+/dist
 
-# Package Files #
-*.jar
-*.war
+# local env files
+.env.local
+.env.*.local
 
-# gwt caches and compiled units #
-war/gwt_bree/
-gwt-unitCache/
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# boilerplate generated classes #
-.apt_generated/
-
-# more caches and things from deploy #
-war/WEB-INF/deploy/
-war/WEB-INF/classes/
-
-#compilation logs
-.gwt/
-
-#gwt junit compilation files
-www-test/
-
-#old GWT (1.5) created this dir
-.gwt-tmp/
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+package-lock.json
