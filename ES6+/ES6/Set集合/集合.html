@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let set = new Set()
+        let set2 = new Set([1,1,2,3,4,5,6,7,8]) // 可以自动去重
+        console.log(set, typeof set)
+        console.log(set2, set2.size)
+        // // 添加
+        // set2.add('18')
+        // console.log(set2)
+        // // 删除
+        // set2.delete(2)
+        // console.log(set2)
+        // // 是否存在某个元素
+        // console.log(set2.has(4))
+        // // 清空
+        // set2.clear()
+        // console.log(set2)
+        for (let v of set2) {
+            console.log(v)
+        }
+    </script>
+</body>
+</html>

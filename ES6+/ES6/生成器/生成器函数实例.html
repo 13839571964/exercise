@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 异步编程 文件操作 网格操作（ajax，request） 数据库操作
+        // 1s 后打印111  2s 后打印222 3s 后打印333
+
+        function one() {
+            setTimeout(() => {
+                console.log(111)
+                inerator.next()
+            }, 1000)
+        }
+        function two() {
+            setTimeout(() => {
+                console.log(222)
+                inerator.next()
+            }, 2000)
+        }
+        function three() {
+            setTimeout(() => {
+                console.log(333)
+                inerator.next()
+            }, 3000)
+        }
+        function * fun(){
+            yield one()
+            yield two()
+            yield three()
+        }
+        const inerator = fun()
+        inerator.next()
+    </script>
+</body>
+</html>

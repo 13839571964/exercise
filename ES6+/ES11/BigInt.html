@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // 大整形
+        // let n = 433n
+        // console.log(n, typeof n) // 433n "bigint"
+
+        // 函数
+        // let m = 122
+        // console.log(BigInt(m)) // 122n
+
+        // 大数值运算
+        let max = Number.MAX_SAFE_INTEGER
+        console.log(max) // 9007199254740991
+        console.log(max, max + 1,max + 2) // 9007199254740991 9007199254740992 9007199254740992
+        console.log(BigInt(max), BigInt(max) + BigInt(1), BigInt(max) + BigInt(2))// 9007199254740991n 9007199254740992n 9007199254740993n
+        console.log(2 == BigInt(2))
+    </script>
+</body>
+</html>

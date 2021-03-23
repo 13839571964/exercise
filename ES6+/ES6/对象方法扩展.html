@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // 1.Object.is用来判断两个值是否相等
+        // console.log(Object.is('111','111')) // true
+        // console.log(Object.is('111','222')) // false
+        // console.log(Object.is(NaN,NaN)) // true
+        // console.log(NaN === NaN) // false
+        // // 2.Object.assign 对象的合并
+        // let obj = {
+        //     name: 'zhangsan',
+        //     age: 14
+        // }
+        // let newObj = {
+        //     name: 'lisi',
+        //     hobby: '篮球'
+        // }
+        // // const finalObj = Object.assign({}, obj, newObj)
+        // // console.log(finalObj, obj, newObj) // 不改变原有
+        // const finalObj = Object.assign(obj, newObj)
+        // console.log(finalObj, obj, newObj) // 改变obj
+        // 3.Object.setPrototypeOf 设置原型对象  Object.getPrototypeOf
+        let obj = {
+            name: 'zhangsan',
+            age: 14
+        }
+        let newObj = {
+            cities: ['上海', '北京', '深圳']
+        }
+        Object.setPrototypeOf(obj, newObj)
+        console.log(obj)
+        console.log(Object.getPrototypeOf(obj).cities) // ['上海', '北京', '深圳']
+    </script>
+</body>
+</html>

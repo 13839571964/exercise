@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // // 1.async 函数
+        // // 2.await 函数  要放在async函数中
+        // const p = new Promise((resolve, reject) => {
+        //     // resolve('成功了')
+        //     reject('失败了')
+        // })
+        // async function main () {
+        //     try{
+        //         const result = await p;
+        //         console.log(result)
+        //     } catch(e) {
+        //         console.log(e);
+        //     }
+        // }
+        // main()
+
+        // // 3.发送ajax请求
+        // function sendAjax(url) {
+        //     return new Promise((resolve, reject) => {
+        //         const xhr = new XMLHttpRequest()
+        //         xhr.open('GET', url)
+        //         xhr.send()
+        //         xhr.onreadystatechange = function () {
+        //             if (xhr.readyState === 4) {
+        //                 if (xhr.status >= 200 && xhr.status < 300) {
+        //                     resolve(xhr.response)
+        //                 } else {
+        //                     reject(xhr.status)
+        //                 }
+        //             }
+        //         }
+        //     })
+        // }
+        // // const result = sendAjax('https://api.apiopen.top/getJoke')
+        // // result.then(res => {
+        // //     console.log(res)
+        // // }).catch(e => {
+        // //     console.log(e)
+        // // })
+        // async function main() {
+        //     const result = await sendAjax('https://api.apiopen.top/getJoke')
+        //     console.log(result)
+        // }
+        // main()
+
+        // 4.对象方法扩展
+        // const obj = {
+        //     school: ['北京大学', '南京大学', '浙江大学'],
+        //     name: ['lisi', 'zhangsan'],
+        //     hobby: ['篮球', '足球', '乒乓球']
+        // }
+        // console.log(Object.keys(obj)) // ["school", "name", "hobby"]
+        // console.log(Object.values(obj)) // 所有的值
+        // console.log(Object.entries(obj)) // Map
+        // const map = new Map(Object.entries(obj))
+        // console.log(map.get('name'))
+        // console.log(Object.getOwnPropertyNames(obj)) // ["school", "name", "hobby"]
+        // console.log(Object.getOwnPropertyDescriptors(obj)) // 对象属性的描述对象
+        // const newObj = Object.create(null, {
+        //     name: {
+        //         value: 'lisi',
+        //         writable: true, // 是否可写
+        //         configurable: true, // 是否可以删除
+        //         enumerable: true
+        //     }
+        // })
+        // console.log(Object.getOwnPropertyDescriptors(newObj))
+    </script>
+</body>
+
+</html>

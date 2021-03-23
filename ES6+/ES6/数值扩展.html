@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // 1.javascript的最小精度
+        // console.log(Number.EPSILON) // 2.220446049250313e-16
+        // console.log(0.1 + 0.2) // 0.30000000000000004
+        // function equal(a, b) {
+        //     if (Math.abs(a - b) < Number.EPSILON) {
+        //         return true
+        //     } else {
+        //         return false
+        //     }
+        // }
+        // console.log(equal(0.1 + 0.2, 0.3)) // true
+
+        // // 2.二进制和八进制
+        // let a = 0b1010
+        // let b = 0o777
+        // let x = 0xff
+        // console.log(a) // 10
+        // console.log(b) // 511
+        // console.log(x) // 255
+
+        // // 3.检测一个数值是否为有限值
+        // console.log(Number.isFinite(100)) // true
+        // console.log(Number.isFinite(Math.PI)) // true
+        // console.log(Number.isFinite(100 / 3)) // true
+        // console.log(Number.isFinite(Infinity)) // false
+
+        // // 4.检测数值是否为NAN
+        // console.log(Number.isNaN(111)) // false
+        // console.log(Number.isNaN(NaN)) // true
+
+        // // 5.判断一个数是否为整数
+        // console.log(Number.isInteger(1.2)) // false
+        // console.log(Number.isInteger(12)) // true
+
+        // // 6.将数字的小数部门抹掉
+        // console.log(Math.trunc(1.2222222)) // 1
+
+        // // 7.判断一个数是正数、负数 零
+        // console.log(Math.sign(1.2)) // 1
+        // console.log(Math.sign(-1.2)) // -1
+        // console.log(Math.sign(0)) // 0
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const arr = [1, 2, 3, 4]
+        // for (let a in arr) {
+        //     console.log(typeof a, a)
+        // }
+        // console.log(arr)
+        // let iterator = arr[Symbol.iterator]()
+        // console.log(iterator.next())
+        // console.log(iterator.next())
+        // console.log(iterator.next())
+        // console.log(iterator.next())
+        // console.log(iterator.next())
+        const obj = {
+            arr: [
+                '111',
+                '222',
+                '333'
+            ],
+            [Symbol.iterator]() {
+                const _this = this
+                let index = -1
+                return {
+                    next:()=> {
+                        if (index < this.arr.length) {
+                            index++;
+                            return {value: this.arr[index], done: false}
+                        } else {
+                            return {value: undefined, done: true}
+                        }
+                    }
+                }
+            }
+        }
+        for (let i of obj) {
+            console.log(i)
+        }
+    </script>
+</body>
+</html>

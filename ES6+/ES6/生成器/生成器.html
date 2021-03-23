@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 生成器其实是一个特殊的函数
+        // 异步编程，纯回调函数 node fs ajax mongodb
+        // function * fun() {
+        //     console.log(111)
+        // }
+        // const iterator = fun()
+        // iterator.next() // 111
+
+
+        function * fun () {
+            // console.log(111)
+            yield '我是111';
+            // console.log(222)
+            yield '我是222';
+            // console.log(333)
+            yield '我是333';
+        }
+        const iterator = fun()
+        // iterator.next()
+        // iterator.next()
+        // iterator.next()
+
+        console.log(iterator.next())
+        console.log(iterator.next())
+        console.log(iterator.next())
+        console.log(iterator.next())
+
+        // for(let v of fun()) {
+        //     console.log(v)
+        // }
+    </script>
+</body>
+</html>

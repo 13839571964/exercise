@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        1.安装babel-cli  babel-preset-env  browserify
+        2.运行npx babel js/app -d dist/js --presets=babel-preset-env
+        3.打包 运行npx browserify dist/js/app.js -o dist/bundle.js
+    -->
+    <!-- <script type="module">
+        // // 1.通用的导入方法
+        // import * as m1 from '../js/m1.js'
+        // console.log(m1)
+        // import * as m3 from '../js/m3.js'
+        // console.log(m3.default)
+        // // 2.结构赋值的方法
+        // import {name,change} from '../js/m1.js'
+        // console.log(name, change)
+        // import {change as eChange} from '../js/m2.js'
+        // console.log(eChange)
+        // import {default as m} from '../js/m3.js'
+        // console.log(m)
+        // // 3.简便形式  针对默认暴露
+        // import m3 from '../js/m3.js'
+        // console.log(m3)
+        // import m1 from '../js/m1.js'
+        // console.log(m1) // Uncaught SyntaxError: The requested module '../js/m1.js' does not provide an export named 'default'
+    </script> -->
+
+    <!-- <script src="../js/app.js" type="module"></script> -->
+
+    <script src="../dist/bundle.js"></script>
+</body>
+</html>

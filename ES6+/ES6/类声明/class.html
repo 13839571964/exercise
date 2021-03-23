@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ES5
+        // function Phone(brand, price) {
+        //     this.brand = brand
+        //     this.price = price
+        // }
+        // Phone.prototype.fn = () => {
+        //     console.log('我是吴保粮')
+        // }
+        // const Huawei = new Phone('华为', 5000)
+        // console.log(Huawei)
+        // Huawei.fn()
+
+        // ES6
+        // class Phone{
+        //     constructor(brand, price) {
+        //         this.brand = brand
+        //         this.price = price
+        //     }
+
+        //     fn () {
+        //         console.log('我是吴保粮', this.brand)
+        //     }
+        // }
+        // const Huawei = new Phone('华为', 5000)
+        // console.log(Huawei)
+        // Huawei.fn()
+
+        class Phone{
+            // 静态属性，属于类，而不是对象
+            static name = '手机'
+            static fn = () => {
+                console.log('我是吴保粮')
+            }
+        }
+        console.log(Phone.name)
+        Phone.fn()
+    </script>
+</body>
+</html>

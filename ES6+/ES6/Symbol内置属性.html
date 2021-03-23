@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1、Symbol.hasInstance
+        // class Person{
+        //     static [Symbol.hasInstance](param){
+        //         console.log(param)
+        //         console.log('我是吴保粮')
+        //         return true
+        //     }
+        //     static name = 'za'
+        // }
+        // const person = new Person()
+        // console.log(person)
+        // const b = {}
+        // console.log(b instanceof Person) // true
+        // console.log(person.name) // undefined
+
+        // 2、Symbol.isConcatSpreadable
+        // const arr = [1,2,3]
+        // const arr2 = [7,8,9,10]
+
+        // console.log(arr.concat(arr2)) // [1, 2, 3, 7, 8, 9, 10]
+        // arr2[Symbol.isConcatSpreadable] = false
+
+        // console.log(arr.concat(arr2))
+        // console.log([...arr,...arr2])
+    </script>
+</body>
+</html>

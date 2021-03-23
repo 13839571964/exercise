@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3,4,5,4,3,2,1]
+        // 1.数组去重
+        // let set = [...new Set(arr)]
+        // console.log(set)
+        // 2.交集
+        let arr2 = [4,5,6,5,6]
+        // let result = [...new Set(arr)].filter(n => new Set(arr2).has(n))
+        // console.log(result)
+        // 3.并集
+        // let result = [...new Set([...arr, ...arr2])]
+        // console.log(result)
+        // 4.差集
+        let result1 = [...new Set(arr)].filter(n => !new Set(arr2).has(n))
+        let result2 = [...new Set(arr2)].filter(n => !new Set(arr).has(n))
+        console.log(result1, result2)
+    </script>
+</body>
+</html>

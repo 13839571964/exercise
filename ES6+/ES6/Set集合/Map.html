@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let map = new Map()
+        map.set('name', '吴保粮')
+        map.set('fun', () => { console.log(111) })
+        map.set('weather', '晴')
+        // console.log(map, map.size)
+
+        // map.delete('weather')
+        // console.log(map, map.size)
+
+        // console.log(map.get('name'))
+
+        // map.clear()
+        // console.log(map)
+
+        for(let v of map) {
+            console.log(v)
+        }
+    </script>
+</body>
+</html>
